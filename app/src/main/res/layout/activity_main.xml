@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_number1"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_number2"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sumar"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button_subtract"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/subtract"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <Button
+        android:id="@+id/button_divide"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Dividir"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation_menu" />
+
+</LinearLayout>
